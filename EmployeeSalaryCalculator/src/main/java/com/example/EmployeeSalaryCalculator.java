@@ -59,14 +59,16 @@ public class EmployeeSalaryCalculator
 				if(HW <= standardWorkingHours)
 				{
 					//YOUR CODE STARTS HERE
-					 
+					 grossSalary = hoursWorked * hourlyRate;
 
 					//YOUR CODE ENDS HERE
 				}
 				else
 				{
 					//YOUR CODE STARTS HERE
- 
+					//Overtime 
+					int extraHours = hoursWorked - 40;
+					grossSalary = (hourlyRate * 40) + (extraHours * 2 * hourlyRate);
 
 					//YOUR CODE ENDS HERE
 				}
